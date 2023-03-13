@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=ù, initial-scale=1.0">
     <title>Vue Hello</title>
-
     <!-- Css -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <main>
-        <h1>Ciao</h1>
+
+    <main class="hello">
+        <h1>{{ message }}</h1>
+        <img :src="image" alt="immagine">
     </main>
 
-
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Js -->
     <script src="main.js"></script>
 </body>
+
 </html>
